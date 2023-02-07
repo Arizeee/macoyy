@@ -23,7 +23,7 @@ class RoleSeeder extends Seeder
 
             $data = [
                 ['name' => 'Admin'],
-                ['name' => 'Teacher'],
+                ['name' => 'Player'],
                 ['name' => 'User'],
             ];
 

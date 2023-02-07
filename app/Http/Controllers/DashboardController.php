@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kelas;
+use App\Models\Siswa;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function index(){
-        return view('dashboard.dashboard');
+    public function dashboard(){
+        return view('dashboard');
     }
+
     
-    public function detail(){
-        return view('dashboard.detaildashboard');
-    }
 }

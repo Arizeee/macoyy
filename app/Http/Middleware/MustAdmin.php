@@ -21,7 +21,7 @@ class MustAdmin
         if(Auth::user()->role_id != 1){
             abort(404);
         }
-        dd(Auth::user());
+        // dd(Auth::user());
 
         return $next($request);
     }

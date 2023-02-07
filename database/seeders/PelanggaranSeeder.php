@@ -15,11 +15,6 @@ class PelanggaranSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('pelanggaran')->insert([
-            'namapelanggaran'=>'Telat Masuk Kelas',
-            'sanksi'=>'Di Beri Peringatan',
-            'level'=>'Ringan',
-            'poin'=>'10',
-        ]);
+        
     }
 }

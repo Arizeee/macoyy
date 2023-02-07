@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Role;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 // use Illuminate\Foundation\Auth\User;
@@ -15,6 +16,7 @@ class AuthController extends Controller
         return view('login');
     }
     public function authincating(Request $request){
+        
         
         $request->validate([
             
@@ -35,7 +37,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/index');
         }
         
         Session::flash('status', 'failed');
@@ -51,7 +53,7 @@ class AuthController extends Controller
  
         $request->session()->regenerateToken();
      
-        return redirect('/login');
+        return redirect('/');
     }
 
     public function register(){
@@ -78,7 +80,7 @@ class AuthController extends Controller
             'password' => bcrypt($request->password),
             'role_id' => 3,
             'remember_token' => Str::random(60),
-
+            
         ]);
         return redirect('/login');
     }

@@ -26,16 +26,19 @@ class Siswa extends Model
     public function guru()
     {
         return $this->belongsTo(Guru::class);
+        // one to many invers
     }
 
     public function kelas()
     {
         return $this->belongsTo(Kelas::class);
+        // one to many invers
     }
 
     public function pelanggaran()
     {
         return $this->belongsToMany(Pelanggaran::class, 'pelanggaran_siswa', 'siswa_id', 'pelanggaran_id');
+        // 
     }
 
 }
