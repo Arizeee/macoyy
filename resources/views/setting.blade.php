@@ -96,7 +96,7 @@
    <div class="preview" data-target="p-1">
       <i class="fas fa-times"></i>
       <img src="profile/{{ auth()->user()->foto }}" alt="tes">
-      <h3>ripall</h3><br>
+      <h3>{{ auth()->user()->name }}</h3><br>
      
       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p> -->
       

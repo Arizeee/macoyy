@@ -52,8 +52,8 @@
           <div class="nav_right" data-name="p-1">
              <ul>
                 <li class="nr_li dd_main" style="list-style:none;">
-                   <img src="images/logoO.png" alt="profile_img" class="propil">
-                   
+                  <img src="profile/{{ auth()->user()->foto }}" alt="tes">
+                  
                    <!-- <div class="dropdown">
                         <div class="dd_menu">
                       <div class="dd_left">
@@ -210,13 +210,14 @@
 
    <div class="preview" data-target="p-1">
       <i class="fas fa-times"></i>
-      <img src="images/logoO.png">
-      <h3>ripall</h3><br>
+      <img src="profile/{{ auth()->user()->foto }}" alt="tes">
+
+      <h3>{{ auth()->user()->name }}</h3><br>
      
       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p> -->
       
       <div class="buttons">
-         <a href="profil.html" class="buy">Edit Profil</a>
+         <a href="/setting" class="buy">Edit Profile</a>
        
       </div>
      <div class="garis"></div>

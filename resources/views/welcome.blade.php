@@ -87,21 +87,21 @@
               <div class="slideee slide-1">
                   <div class="slide-content">
                       <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
-                      <button><a href="#">Start Now</a></button>
+                      <button><a href="/login">Start Now</a></button>
                   </div>
                   <div class="shadow"></div>
               </div>
               <div class="slideee slide-2">
                   <div class="slide-content">
                       <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
-                      <button><a href="#">Start Now</a></button>
+                      <button><a href="/login">Start Now</a></button>
                   </div>
                   <div class="shadow"></div>
               </div>
               <div class="slideee slide-3">
                   <div class="slide-content">    
                       <h2>DAPATKAN TEMAN MABAR MU DISINI <br>SEGERA JOIN DAN MAINKAN BERSAMA <br>TEMAN BARUMU</h2>
-                      <button><a href="#">Start Now</a></button>
+                      <button><a href="/login">Start Now</a></button>
                   </div>
                   <div class="shadow"></div>
               </div>
