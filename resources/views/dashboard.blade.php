@@ -53,8 +53,8 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Tables</a></li>
-          <li><a href="datapemain.html">Table Pemain</a></li>
-          <li><a href="#">Table Game</a></li>
+          <li><a href="/data-pemain">Table Pemain</a></li>
+          <li><a href="/">Table Game</a></li>
         </ul>
       </li>
       <li>

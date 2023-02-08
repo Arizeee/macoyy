@@ -42,13 +42,13 @@
 
     <div class="navbarr">
       <header>
-      <a href="tampilan.html" class="logo">Macoyyy</a>
+      <a href="/index" class="logo">Macoyyy</a>
       <nav>
           <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Blog</a></li> 
+              <li><a href="/index">Home</a></li>
+              <li><a href="/index">About Us</a></li>
+              <li><a href="/index">Projects</a></li>
+              <li><a href="/become">Become</a></li> 
             
             </ul>
       </nav>
@@ -111,23 +111,20 @@
 </div> 
 
 <div class="wrapper">
-
    <div class="sidebar">
        <ul>
          <li>
-                 <span class="itemm">Settings</span>
-             
+            <span class="itemm">Settings</span> 
          </li>
          <li>
              <a href="#"class="active">
-                
-                 <span class="item">Edit Profile</span>
+               <span class="item">Edit Profile</span>
              </a>
          </li>
          <div class="gariss"></div>
          <li>
-             <a href="index.html" class="item">  
-                 <span>Log Out</span>
+             <a href="/logout" class="item">  
+               <span>Log Out</span>
              </a>
          </li>
      </ul>
@@ -155,15 +152,12 @@
          <form action="/settings" method="POST"  enctype="multipart/form-data">
             @csrf
             <div class="container_">
-             
-            
-           
             <p class="image_upload">
               <label for="userImage">
               <a class="btn btn-warning btn-sm" rel="nofollow"><span class='glyphicon glyphicon-paperclip'></span> Sisipkan Gambar</a>
               </label>
               <input type="file" name="foto" id="userImage" placeholder="Sisipkan Gambar">
-              <button type="submit" class="btn-kirim">KIRIM</button>
+              <button type="submit" class="btn-kirim">Kirim</button>
             </p>
             </div>
          </form>

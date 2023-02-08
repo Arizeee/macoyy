@@ -23,8 +23,8 @@
         <nav>
            <ul>
               
-               <li><a href="login.html" class="cta">Sign In</a></li>
-               <li><a href="regis.html" class="ctaa">SIgn Up</a></li>
+               <li><a href="/login" class="cta">Sign In</a></li>
+               <li><a href="/register" class="ctaa">SIgn Up</a></li>
            </ul>
        </nav>
     </header> 

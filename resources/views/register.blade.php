@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,31 +21,31 @@
 <!-- css -->
 <link rel="stylesheet" href="css/LogReg.css">
 <body>
-        <div class="topbarr" style="position: absolute;" >
+    <div class="topbarr" style="position: absolute;" >
        <a href="index.html"><h1 class="barr"><span class="spannn">MABAR</span> COYYY</h1> </a> 
     </div>
    <div class="gambar">
-    <img src="images/logoWeb.png" alt="">
+    <img src="assets/images/logoWeb.png" alt="">
    </div>
  <div class="gambarr">
-        <img src="images/weblogo-removebg-preview.png" alt="">
+        <img src="assets/images/weblogo-removebg-preview.png" alt="">
     </div>
-   
    
     <div class="login-wrap">
 
        
         <div class="login-html">
-            <form action="{{ route("saveregister") }}" method="POST">
-              @csrf
-              <div class="topbar">
+            
+            <div class="topbar">
                 <h1><span class="spann">Welcome to <br><br><span class="spannn" style="margin-left: 8%;">Mabar</span>  Coyyy</span></h1> 
             </div>
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log In</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"><a href="/register">Sign Up</a> </label>
+            <input id="tab-1" type="radio" name="tab" class="sign-in" ><label for="tab-1" class="tab"><a href="/login">Sign In</a> </label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Sign Up</label>
             <div class="login-form">
-                <div class="sign-in-htm">
-                  <div class="group">
+                <div class="sign-up-htm" id="sign up">
+                  <form action="{{ route("saveregister") }}" method="POST">
+                    @csrf
+                    <div class="group">
                       <label for="pass" class="label">Username</label>
                       <input id="name" type="text" class="input" name="name" placeholder="Please enter your Username" value="{{old('name')}}" >
                       <span style="color: red">
@@ -75,19 +73,19 @@
                           @enderror
                         </span>
                     </div>
-                   
-                    <!-- Already Registered -->
-                  <div class="text-center w-100">
-                    <p class="text-muted font-weight-bold">Already Registered? <a href="/login" class="text-primary ml-2">Login</a></p>
-                </div>
-                    <div class="group">
-                       <button type="submit" id="register" class="button" style="color: blue;">Login</button>
-                    </div>
-            </form>
-           
-                     
-            
+        
+                  
                     
+                  
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> After checking, you are indicating that you have read andacknowledge the MABAR COYYY Platform Terms of Service
+                        </label>
+                    </div>
+                    <div class="group">
+                      <button type="submit" id="register" class="button" style="color: wihte;">Login</button>
+                    </div>
+                  </form>
                 </div>
             </div>
         </div>

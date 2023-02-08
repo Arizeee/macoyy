@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+// use RealRashid\SweetAlert\Facedes\Alert;
 
 class AuthController extends Controller
 {
@@ -82,6 +83,9 @@ class AuthController extends Controller
             'remember_token' => Str::random(60),
             
         ]);
+
+        // Alert::success('Register Success', 'Welcome to your Dashboard');
+
         return redirect('/login');
     }
 }

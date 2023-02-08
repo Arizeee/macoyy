@@ -37,24 +37,24 @@
 
     <div class="navbarr">
       <header>
-      <a href="#" class="logo">Mabar Coyyy</a>
+      <a href="#" class="logo">Macoyyy</a>
       <nav>
           <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Blog</a></li>
-          
-          </ul>
+              <li><a href="/become">Became</a></li> 
+            
+            </ul>
       </nav>
-      <div class="navbar">
+           <div class="navbar">
              
-          <div class="nav_right">
+          <div class="nav_right" data-name="p-1">
              <ul>
                 <li class="nr_li dd_main" style="list-style:none;">
-                  <img src="profile/{{ auth()->user()->foto }}" alt="tes">
+                   <img src="images/logoO.png" alt="profile_img" class="propil">
                    
-                   <div class="dropdown">
+                   <!-- <div class="dropdown">
                         <div class="dd_menu">
                       <div class="dd_left">
                          <ul>
@@ -68,17 +68,19 @@
                          <ul>
                             <li style="list-style:none;">Profil</li>
                            <li style="list-style:none;">Logout</li>
-                            <li style="list-style:none;"><a href="/setting">setting</a></li>
+                            <li style="list-style:none;">Settings</li>
                          </ul>
                       </div>
                    </div>
-                   </div>
+                   </div> -->
                  
                 </li>
                 
              </ul>
           </div>
        </div>
+        
+     
   </header> 
    </div>
 
@@ -208,126 +210,20 @@
 
    <div class="preview" data-target="p-1">
       <i class="fas fa-times"></i>
-      <img src="assets/images/lol2.png" alt="">
-      <h3>League Of Legends</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 56, 227 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
+      <img src="images/logoO.png">
+      <h3>ripall</h3><br>
+     
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p> -->
+      
       <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
+         <a href="profil.html" class="buy">Edit Profil</a>
+       
       </div>
+     <div class="garis"></div>
    </div>
+     
 
-   <div class="preview" data-target="p-2">
-      <i class="fas fa-times"></i>
-      <img src="assets/images/fortnite2.png" alt="">
-      <h3>Fortnite</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         
-         <span>( 20, 740 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-3">
-      <i class="fas fa-times"></i>
-      <img src="assets/images/valorant2.png" alt="">
-      <h3>Valorant</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <span>( 15, 423 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-4">
-      <i class="fas fa-times"></i>
-      <img src="assets/images/a.jpeg" alt="">
-      <h3>PUBG</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-5">
-      <i class="fas fa-times"></i>
-      <img src="assets/images/b.jpeg" alt="">
-      <h3>FREE FIRE</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-
-   <div class="preview" data-target="p-6">
-      <i class="fas fa-times"></i>
-      <img src="assets/images/c.jpeg" alt="">
-      <h3>COD</h3>
-      <div class="stars">
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star-half-alt"></i>
-         <span>( 250 )</span>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-      <div class="pricee">$2.00</div>
-      <div class="buttons">
-         <a href="#" class="buy">buy now</a>
-         <a href="#" class="cart">add to cart</a>
-      </div>
-   </div>
-   
-</div> 
+</div>  
 
 <h3 class="title" id="title"> 10+ game bisa kamu mainkan bersama</h3>
 

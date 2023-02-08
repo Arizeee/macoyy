@@ -10,6 +10,7 @@ use App\Http\Controllers\ValorantController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PemainController;
 use App\Http\Controllers\BecomeController;
 use App\Http\Controllers\UserDetailController;
 use App\Http\Middleware\MustAdmin;
@@ -60,6 +61,10 @@ Route::get('/dashboard/editvalo/{id}', [ValorantController::class, 'editvalo'])-
 Route::post('/dashboard/updatevalo/{id}', [ValorantController::class, 'updatevalo'])->middleware('auth', 'must-admin')->name('updatevalo');
 Route::get('/dashboard/deletevalo/{id}', [ValorantController::class, 'deletevalo'])->middleware('auth', 'must-admin')->name('deletevalo');
 
+// Data Pemain
+Route::get('/data-pemain', [PemainController::class, 'dpemain'])->middleware('auth', 'must-admin');
+Route::get('/edit-pemain', [PemainController::class, 'edpemain'])->middleware('auth', 'must-admin');
+Route::get('/tambah-pemain', [PemainController::class, 'tdpemain'])->middleware('auth', 'must-admin');
 
 
 
