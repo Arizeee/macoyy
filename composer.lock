@@ -1928,16 +1928,16 @@
         },
         {
             "name": "munafio/chatify",
-            "version": "v1.5.4",
+            "version": "v1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/munafio/chatify.git",
-                "reference": "ee5cb04ab003590e56cae5fe9bec52bfeef95bcd"
+                "reference": "f5197f8e89d7d1315515d80ac2a867b5e88fabf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/munafio/chatify/zipball/ee5cb04ab003590e56cae5fe9bec52bfeef95bcd",
-                "reference": "ee5cb04ab003590e56cae5fe9bec52bfeef95bcd",
+                "url": "https://api.github.com/repos/munafio/chatify/zipball/f5197f8e89d7d1315515d80ac2a867b5e88fabf0",
+                "reference": "f5197f8e89d7d1315515d80ac2a867b5e88fabf0",
                 "shasum": ""
             },
             "require": {
@@ -1984,9 +1984,9 @@
             ],
             "support": {
                 "issues": "https://github.com/munafio/chatify/issues",
-                "source": "https://github.com/munafio/chatify/tree/v1.5.4"
+                "source": "https://github.com/munafio/chatify/tree/v1.5.6"
             },
-            "time": "2022-12-05T10:52:08+00:00"
+            "time": "2023-01-26T20:31:56+00:00"
         },
         {
             "name": "nesbot/carbon",
