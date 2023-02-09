@@ -11,6 +11,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PemainController;
+use App\Http\Controllers\GameController;
 use App\Http\Controllers\BecomeController;
 use App\Http\Controllers\UserDetailController;
 use App\Http\Middleware\MustAdmin;
@@ -66,6 +67,21 @@ Route::get('/data-pemain', [PemainController::class, 'dpemain'])->middleware('au
 Route::get('/edit-pemain', [PemainController::class, 'edpemain'])->middleware('auth', 'must-admin');
 Route::get('/tambah-pemain', [PemainController::class, 'tdpemain'])->middleware('auth', 'must-admin');
 
+//data pemain
+Route::get('/pemain',[PemainController::class, 'pemain'])->name('pemain')->middleware('auth', 'must-admin');
+Route::get('/tambahpemain',[PemainController::class, 'tambahpemain'])->name('tambahpemain')->middleware('auth', 'must-admin');
+Route::post('/insertpemain',[PemainController::class, 'insertpemain'])->name('insertpemain')->middleware('auth', 'must-admin');
+Route::get('/tampilkandata/{id}',[PemainController::class, 'tampilkandata'])->name('tampilkandata')->middleware('auth', 'must-admin');
+Route::post('/updatedata/{id}',[PemainController::class, 'updatedata'])->name('updatedata')->middleware('auth', 'must-admin');
+Route::get('/deletedata/{id}',[PemainController::class, 'deletedata'])->name('deletedata')->middleware('auth', 'must-admin');
+
+//data game 
+Route::get('/game',[GameController::class,'games'])->name('games')->middleware('auth', 'must-admin');
+Route::get('/tambahgame',[GameController::class,'tambahgames'])->name('tambahgames')->middleware('auth', 'must-admin');
+Route::post('/insertgame',[GameController::class,'insertgames'])->name('insertgames')->middleware('auth', 'must-admin');
+Route::get('/tampilgame/{id}',[GameController::class,'tampilgames'])->name('tampilgames')->middleware('auth', 'must-admin');
+Route::post('/updategame/{id}',[GameController::class,'updategames'])->name('updategames')->middleware('auth', 'must-admin');
+Route::get('/deletegame/{id}',[GameController::class,'deletegames'])->name('deletegames')->middleware('auth', 'must-admin');
 
 
 
